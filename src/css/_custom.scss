@@ -247,13 +247,13 @@ header {
 	// background: $bg1;
 	.service-item {
 		letter-spacing: 1.5px;
-		// color : #fff;
+		color : #8e8e8e;
 		padding: 20px;
 		display: flex;
 		flex-direction: column;
 		text-align: center;
 		justify-content: center;
-		border: 1px solid $kuning;
+		border: 1px solid #eaeaea;
 		height: 10px;
 		margin-bottom:10px;
 
@@ -503,7 +503,6 @@ footer{
 
 
 @media only screen and (max-width : 720px) {
-	
 	#gallery-1 .gallery-item {
 		width: 100% !important; 
 	}
