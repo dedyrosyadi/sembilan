@@ -8,7 +8,6 @@ $('.page-scroll').on('click', function(e) {
 	}, 800);
 
 	e.preventDefault();
-
 });
 
 
@@ -22,11 +21,9 @@ function closeNav() {
 
 
 $(document).on("scroll", function() {
-
 	if($(document).scrollTop()>50) {
 		$("header").removeClass("large").addClass("small");
 	} else {
 		$("header").removeClass("small").addClass("large");
 	}
-
 });
