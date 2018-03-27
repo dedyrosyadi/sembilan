@@ -12464,7 +12464,6 @@ $('.page-scroll').on('click', function(e) {
 });
 
 
-
 function openNav() {
 	$("#menu-resv").animate({height: "100%"});
 }

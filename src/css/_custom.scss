@@ -6,6 +6,10 @@
   font-weight: 300;
 }
 
+#main {
+	margin-top: 80px;
+}
+
 body {
   font-weight: 200;
   letter-spacing: 1px;
@@ -33,7 +37,7 @@ a.show {
 }
 
 #showslide {
-  padding: 120px 0 40px 0 ;
+  padding: 40px 0;
 }
 
 // -----------------------------------------------------------------------------
@@ -121,10 +125,6 @@ a.show {
 }
 
 
-#about, #service, #clients , #our-team, #events {
-  padding: 50px 0 !important;
-}
-
 h1{
   margin:0 0 20px 0;
 }
@@ -137,7 +137,7 @@ h1,h2,h3{
 .title {
   // font-weight: 400;
   margin-bottom : 30px;
-  font-size: 3em;
+  font-size: 2.5em;
   text-transform: uppercase;
   letter-spacing: 3px !important;
   color:$biru;
@@ -153,8 +153,8 @@ h1,h2,h3{
   @include transition(all .5s);
 }
 
-#about, #service, #client, #our-team, #contact, footer {
-  padding: 30px 0;
+#about, #service, #client, #our-team, #widget, #contact, #portfolio {
+  padding: 50px 0;
 }
 
 header {
@@ -214,8 +214,6 @@ header {
 // ABOUT
 #about {
   background: #eaeaea;
-
-  padding: 50px 0 0 0;
   img {
     width : 100%
   }
@@ -248,10 +246,12 @@ header {
     &:hover {
       background: #f3ca0a;
       color: #fff;
-      border: 1px solid $kuning;
+      // border: 1px solid $kuning;
+      text-decoration: none;
     }
     a {
       color: inherit;
+      text-decoration: none;
     }
   }
 }
@@ -338,25 +338,27 @@ label {
 // -----------------------------------------------------------------------------
 
 
-//EVENTS
-#events {
-  margin-top: 80px;
-  ul#list-event {
+//PORTFOLIO
+#portfolio {
+  // margin-top: 80px;
+  ul#list-portfolio {
 
     padding: 0;
     display: block;
 
-    li.event-item {
+    li.portfolio-item {
       list-style: none;
       width: 100%;
-      margin-bottom: 10px;
+      // margin-bottom: 10px;
       display: flex;
-      margin-bottom: 10px;
+      margin-bottom: 6px;
       height: 100%;
 
       a {
         text-decoration: none;
         background: darken($biru,10%);
+        // font-weight: 400;
+        // color: darken($biru,5%);
         color: #fff;
         display: block;
         padding: 12px;
@@ -364,7 +366,8 @@ label {
         @include transition-duration(.5s);
 
         &:hover {
-          background: darken($biru,25%);
+          background: darken($biru,0%);
+          color: #fff;
         }
 
         &:visited {
@@ -373,8 +376,8 @@ label {
       }
 
       span.date {
-        font-size: 14px;
-        font-weight: 400;
+        font-size: 1em;
+        // font-weight: 400;
         color: #fff;
         background: #039adf;
         padding: 8px;
@@ -391,7 +394,7 @@ label {
       }
       
       span.title {
-        font-size: 1.2em;
+        font-size: 1em;
         display: block;
         margin: 0;
         width: 100%;
@@ -400,6 +403,43 @@ label {
   }
 }
 // -----------------------------------------------------------------------------
+
+//WIDGET
+
+.box-widget {
+	margin-bottom: 20px;
+}
+.title-widget {
+	color: $biru;
+	margin-bottom: 10px;
+	letter-spacing: 2px !important;
+}
+
+.list-widget {
+	a {
+		font-size: 12px;
+		display: block;
+		padding: 5px 10px;
+		color : #8e8e8e;
+		border-style: solid;
+		border-color: #e3e3e3;
+		border-width: 1px 1px 0 1px;
+  	@include transition-duration(.5s);
+
+  	&:last-child {
+  		border-bottom: solid 1px #e3e3e3 !important;	
+  	}
+
+    &:hover {
+      background: #f3ca0a;
+      color: #fff;
+      text-decoration: none; 
+    }
+	}
+}
+
+// -----------------------------------------------------------------------------
+
 
 
 //CONTACT
@@ -442,12 +482,22 @@ label {
 footer{
   background: #272727;
   font-size: 12px;
+  padding: 20px;
 }
 
 // -----------------------------------------------------------------------------
 
 
-@media only screen and (max-width : 720px) {
+@media only screen and (max-width : 768px) {
+	#about, #service, #client, #our-team, #contact, #portfolio {
+  padding: 20px 0;
+	}
+
+	#widget {
+		padding: 0;
+	}
+
+
   #gallery-1 .gallery-item {
     width: 100% !important; 
   }
@@ -455,7 +505,7 @@ footer{
   li.team {
     width:50% !important;
   }
-  #events {
+  #portfolio {
     span.date {
       width: 50% !important;
     }
