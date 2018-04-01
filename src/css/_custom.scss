@@ -166,7 +166,7 @@ h3 {
 
 .title {
   // font-weight: 400;
-  margin-bottom : 30px;
+  margin-bottom : 20px;
   // font-size: 2.2em;
   text-transform: uppercase;
   letter-spacing: 3px !important;
@@ -505,13 +505,16 @@ footer{
 
 
 @media only screen and (max-width : 768px) {
-	#about, #service, #client, #our-team, #contact, #portfolio {
+	
+	#main {
+		margin-top:100px; 
+	}
+
+	#about, #service, #client, #our-team, #contact, #portfolio, #widget {
   padding: 20px 0;
 	}
 
-	#widget {
-		padding: 0;
-	}
+	
 
 
   #gallery-1 .gallery-item {
@@ -579,10 +582,6 @@ footer{
   		border-bottom: solid 1px #e3e3e3 !important;	
   	}
 
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // padding: 10px;
     h4 {
       font-size: .7em;
     }
