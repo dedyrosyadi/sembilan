@@ -303,13 +303,13 @@ header {
       display: flex;
       align-items: center;
       list-style: none;
-      margin: 15px;
+      margin: 5px;
       // display: inline-block;
     }
   }
 
   img {
-    max-width: 130px;
+    max-width: 100px;
     height: auto;
     @include transition-duration(.5s);
     opacity: 0.7;
