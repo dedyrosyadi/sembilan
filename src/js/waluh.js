@@ -1,1 +1,1 @@
-console.log(' Development by Vision Studio');
+console.log('Development by Vision Studio');
